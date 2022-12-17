@@ -1,0 +1,82 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Opacity toggle
+.fade {
+    opacity: 0.3;
+}
+.focus {
+    opacity: 1;
+} */
+
+/*Custom backgroudn*/
+body {
+    background-image: url(../assets/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 120% -25%;
+}
+#content {
+    background-image: url(../assets/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: -80% 95%;
+}
+@media screen and (max-width:768px) {
+    body {
+        background-position: 135% -25% ;
+    }
+    #content {
+        background-position: -190% 45%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #content {
+        background-position: -150% 65%;
+    }
+}
+
+/*Carousel*/
+.tag {
+    position: absolute;
+}
+.tag[data-status='toRight'] {
+        transform: translateX(150%) scale(0);
+        transition: 1000ms;
+    
+    }
+    .tag[data-status='toLeft'] {
+        transform: translateX(-150%) scale(0);
+        transition: 1000ms;
+    }
+    .tag[data-status='active-1'] {
+        transform: translate(-150%) scale(0);
+        transition: 1000ms;
+    }
+    .tag[data-status='active-2'] {
+        transform: translate(0%) scale(1);
+        transition: 1000ms;
+    }
+@media screen and (min-width: 768px) {
+    .tag[data-status='toRight'] {
+        transform: translateX(150%) scale(0);
+        transition: 1000ms;
+    
+    }
+    .tag[data-status='toLeft'] {
+        transform: translateX(-150%) scale(0);
+        transition: 1000ms;
+    }
+    .tag[data-status='active-1'] {
+        transform: translate(-60%) scale(1);
+        transition: 1000ms;
+    }
+    .tag[data-status='active-2'] {
+        transform: translate(60%) scale(1);
+        transition: 1000ms;
+    }
+}

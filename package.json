@@ -1,0 +1,17 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "A project to build an interactive website with TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "buildWind": "tailwindcss -i ./src/input.css -o ./dist/index.css",
+    "watchWind": "tailwindcss -i ./src/input.css -o ./dist/index.css --watch"
+  },
+  "author": "Huynh Anh Kiet",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  }
+}
