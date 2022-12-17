@@ -9,3 +9,5 @@ I really enjoyed tailwind css
 - Carousel animation
 - Responsive navigation bar
 - Overall layout of a business web page
+
+## Visit page at:  <a href="https://miterai.github.io/TailwindCSS/index.html">Manage WindTailCSS</a>
